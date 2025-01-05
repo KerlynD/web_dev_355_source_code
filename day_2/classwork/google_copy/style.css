@@ -1,0 +1,95 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0 30px 0 30px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    display: flex;
+    border-radius: 10px;
+}
+
+.google_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searching {
+    display: flex;
+    flex-direction: column;
+    width: 100vh;
+    background-color: rgb(240, 240, 240);
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.search > input {
+    width: 300px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 5px;
+}
+
+.results {
+    display: flex;
+    border-radius: 15px;
+    margin: 0;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.aboutG {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px 20px 0px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.updates {
+    display: flex;
+    flex-direction: column;
+    width: 100vh;
+    height: 50px;
+    align-items: center;
+    background-color: rgb(240, 240, 240);
+}
+
+.updates > form {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+p {
+    margin-top: 0px;
+}
