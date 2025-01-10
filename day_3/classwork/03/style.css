@@ -1,0 +1,63 @@
+
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+header > h1 {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    height: 10vh;
+    margin: 0 20vw 0 20vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    margin-top: 20px;
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main {
+    margin: 0 20vw 0 20vw;
+}
+
+img {
+    width: 300px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel > button {
+    width: 70px;
+    height: 200px;
+    border-radius: 10px;
+    border: 1px solid gainsboro;
+    background-color: rgb(221, 221, 221);
+    font-size: larger;    
+}
+
+.carousel {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.FAQ {
+    display: flex;
+    justify-content: center;
+}
