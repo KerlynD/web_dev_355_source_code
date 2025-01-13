@@ -1,0 +1,9 @@
+Classwork
+
+1. Download the files for the Beyonce web page.
+2. After the Fun Facts sections develop a FAQ section.
+3.1 Find 4-5 commonly asked questions about Beyonce.
+3.2 Place those Questions and Answers in the FAQ section
+3.3 Make each Question a collapsable button such that if user
+    clicks on the button the answer shows, when clicked again 
+    the answer hides.

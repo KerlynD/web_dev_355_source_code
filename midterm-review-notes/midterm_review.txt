@@ -1,0 +1,30 @@
+Basic HTML
+1. Write the HTML code to create a basic webpage with the following elements:
+   - A title 'Midterm Review'
+   - A header 'Welcome to the Midterm Review'
+   - A paragraph with some text
+   - An unordered list with three items
+2. Explain the difference between block-level and inline elements in HTML. Provide examples of each.
+3. How do you create a hyperlink in HTML? Write the code for a link to 'https://www.example.com' with the text 'Visit Example'.
+4. What is the purpose of the <meta> tag in HTML, and where is it placed in a document?
+5. Write the HTML code to embed an image with the source 'image.jpg' and an alternate text 'Example Image'.
+6. Describe the purpose of the <head> and <body> sections in an HTML document.
+7. How do you create a table in HTML? Write the code for a table with two rows and two columns.
+
+Basic CSS
+1. What is the difference between an inline style, an internal style sheet, and an external style sheet? Provide examples of each.
+2. Write the CSS code to change the background color of a webpage to lightblue.
+3. How do you center a block-level element horizontally using CSS?
+4. Explain the box model in CSS and its components.
+5. Write the CSS code to create a class 'highlight' that changes the text color to red and the font size to 20px.
+6. What is the purpose of the 'float' property in CSS? Provide an example of its usage.
+7. How do you apply multiple CSS classes to a single HTML element? Provide an example.
+
+Basic JavaScript
+1. Write a JavaScript function that takes an array of numbers as an argument and returns the sum of all the numbers in the array.
+2. Explain the difference between 'var', 'let', and 'const' in JavaScript.
+3. How do you create an object in JavaScript? Write the code for an object representing a book with properties for title, author, and pages.
+4. What is a closure in JavaScript? Provide an example.
+5. Write a JavaScript function that takes a callback function as an argument and calls it after 2 seconds.
+6. How do you add a new element to the end of an array in JavaScript? Provide an example.
+7. Explain the concept of 'this' in JavaScript. Provide an example of how it is used.
