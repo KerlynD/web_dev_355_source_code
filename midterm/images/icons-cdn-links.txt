@@ -1,0 +1,8 @@
+Facebook:
+<img width="50" height="50" src="https://img.icons8.com/ios/50/facebook-new.png" alt="facebook-new"/>
+
+Instagram:
+<img width="100" height="100" src="https://img.icons8.com/ios/100/instagram-new--v1.png" alt="instagram-new--v1"/>
+
+YouTube:
+<img width="100" height="100" src="https://img.icons8.com/ios/100/youtube-play--v1.png" alt="youtube-play--v1"/>

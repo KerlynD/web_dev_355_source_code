@@ -1,0 +1,16 @@
+1. Sign up for MongoDB
+2. Navigate to QuickStart menu and setup a DB username + password
+3. Set up the free Cluster0 cluster
+4. Click on Connect > Drivers > Follow the 3 steps displayed
+5. For step 3, change <db_password> to your password
+6. Navigate to Collections > Create Database > Enter Database name & Collection name
+7. Head over to VS Code/Server
+
+---
+
+1. Set up you .env file with your atlas_uri
+2. Investigate the model/db.js + app.js file
+3. Understand the signup walkthrough code
+4. Transfer this code from index.js to user.js router
+5. Implement the  signin code
+6. Put all the checks and balances in place for proper sign up/in (unique username, long password, username/password not match etc.)

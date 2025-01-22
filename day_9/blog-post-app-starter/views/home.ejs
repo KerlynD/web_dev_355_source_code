@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>Welcome to the Blog of the Block!</h1>
+        <div>
+            <% if (posts && posts.length > 0) { %>
+                <% posts.forEach(post => { %>
+                    <div>
+                        <h2><%= post.title %></h2>
+                        <h3><%= post.body %></h3>
+                    </div>
+                <% }) %>
+            <% } else {%>
+                <p>No posts to show</p>
+            <% } %>
+        </div>
+        <div>
+            <button type="submit" class="button" onclick="window.location.href='/home/compose'">
+                Compose
+            </button>
+        </div>
+    </body>
+</html>

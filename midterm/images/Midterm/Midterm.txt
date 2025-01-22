@@ -1,0 +1,16 @@
+Midterm:
+
+Your goal is to recreate this website: 
+
+https://myhra-fluid-demo.squarespace.com/?_gl=1*eomb6t*_up*MQ..*_gs*MQ..&gclid=Cj0KCQiAkJO8BhCGARIsAMkswygaZA5d4DQAbNw-naoRIrK3N2y91TKnBeklF4yRkKMfxJwILhUGrOYaAruYEALw_wcB&gclsrc=aw.ds
+
+
+This website will only have the 
+- home page (index.html)
+- style sheet (styles.css)
+- js file (script.js)
+
+The menu items, the login and work with me button are not part of the exam.
+In place of the Work With Me button, create a dark mode - light mode switch button.
+
+The images are provided. Good luck!
