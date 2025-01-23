@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App Homepage</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-image: url('/images/windows_xp_bliss-wide.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 90vh;
+            color: #333;
+        }
+
+        h1 {
+            background: white;
+            border-radius: 12px;
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: center;
+            color: #e8811a;
+            margin-bottom: 2rem;
+        }
+
+        .weather-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .form-text {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-text label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #555;
+        }
+
+        .form-text input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 2rem;
+            margin: 0.5rem 0 1.5rem;
+            justify-content: center;
+        }
+
+        .radio-option {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .get-weather {
+            width: 100%;
+            padding: 10px;
+            background-color: #e8811a;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        p {
+            text-align: center;
+            color: #555;
+            margin-bottom: 0.5rem;
+        }
+        .note {
+            color: linear-gradient(90deg, rgba(4,12,103,1) 0%, rgba(33,22,22,1) 49%, rgba(0,212,255,1) 100%)
+        }
+    </style>
+</head>
+<body>
+    <h1>Weather App ☀️</h1>
+    <form method="GET" action="/weather" class="weather-form">
+        <div class="form-text">
+            <label for="city">Enter City Name</label>
+            <input id="city" name="city" type="text" required placeholder="City Name">
+        </div>
+
+        <div>
+            <p>Forecast Type</p>
+            <div class="radio-group">
+                <div class="radio-option">
+                    <input type="radio" id="today" name="forecast" value="today">
+                    <label for="today">Today</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="fiveday" name="forecast" value="fiveday">
+                    <label for="fiveday">5-Day</label>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <p>Temperature Unit</p>
+            <div class="radio-group">
+                <div class="radio-option">
+                    <input type="radio" id="fahrenheit" name="unit" value="imperial">
+                    <label for="fahrenheit">Fahrenheit</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="celsius" name="unit" value="metric" checked>
+                    <label for="celsius">Celsius</label>
+                </div>
+            </div>
+        </div>
+
+        <button type="submit" class="get-weather">Get Weather</button>
+    </form>
+    <footer>
+        <p class="note">Thank you professor! I learned so much in this class. Have a great Spring Sem!</p>
+    </footer>
+</body>
+</html>

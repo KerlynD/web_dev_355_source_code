@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repos</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        section {
+            padding-top: 200px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        h3, p {
+            margin: 0;
+        }
+
+        div {
+            border: 1px solid gray;
+            border-radius: 5px;
+            margin: 20px 10px 0px 10px;
+            width: 400px;
+            padding: 5px 10px 5px 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Your Repos</h1>
+    <section>
+        <%for(let i = 0; i < repos.length; i++) {%>
+            <a href=<%= repos[i].owner.html_url%> target="_blank"><div>
+                <h3><%= repos[i].name %></h3>
+                <p>Owner: <%= repos[i].owner.login%></p>
+            </div></a>
+        <%}%>
+    </section>
+</body>
+</html>

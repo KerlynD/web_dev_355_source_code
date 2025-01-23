@@ -1,0 +1,12 @@
+1. Login in your GitHub
+2. Go to Settings > Developer Settings > OAuth Apps > New OAuth App
+3. Enter App name, Homepage URL (http://localhost:3000), Authorization callback (http://localhost:3000/callback)
+4. Create your app
+5. Once inside the app settings, create a Client Secret
+6. You just registered your app with GitHub, which has access to users GitHub
+7. Head over to the server and start setting it up
+8. Download, unzip and npm install your copy of the project
+9. Get to know index.js router
+
+10. Replicate the class walkthrough in your devices with your own app and your own account
+11. Add a create-repo path that will have a short form, which upon completion and submission will create a new repo for the user. (create the form first, link it to the create-repo path, catch the form submission, then communicate with GitHub API)

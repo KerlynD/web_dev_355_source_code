@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5-Day Forecast</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-image: url('/images/windows_xp_bliss-wide.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 90vh;
+            color: #333;
+        }
+
+        h1 {
+            background: white;
+            border-radius: 12px;
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: center;
+            color: #e8811a;
+            margin-bottom: 2rem;
+        }
+
+        .forecast-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .forecast {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            flex: 1;
+            min-width: 200px;
+            max-width: 300px;
+        }
+
+        .forecast h3 {
+            color: #e8811a;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .forecast p {
+            margin: 0.5rem 0;
+            color: #555;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 2rem;
+            color: #e8811a;
+            text-decoration: none;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <h1>5-Day Forecast for <%= weather.city.name %></h1>
+    
+    <div class="forecast-container">
+        <% 
+        // 5 days of data, so readings at index 0, 8, 16, 24, and 32
+        const dayIndices = [0, 8, 16, 24, 32]
+        
+        // traverse data at the index needed
+        for(let i = 0; i < dayIndices.length; i++) {
+            if(weather.list[dayIndices[i]]) {
+                const data = weather.list[dayIndices[i]]
+                // first 10 chars of dt_txt
+                const date = data.dt_txt.substring(0, 10)
+        %>
+            <div class="forecast">
+                <h3><%= date %></h3>
+                <p>Temperature: <%= data.main.temp %><%= tempUnit %></p>
+                <p>Feels like: <%= data.main.feels_like %><%= tempUnit %></p>
+                <p>Weather: <%= data.weather[0].description %></p>
+                <p>Humidity: <%= data.main.humidity %>%</p>
+                <p>Wind Speed: <%= data.wind.speed %> m/s</p>
+            </div>
+        <%  }
+        } %>
+    </div>
+
+    <a href="/" class="back-link">← Back to Search</a>
+</body>
+</html> 
